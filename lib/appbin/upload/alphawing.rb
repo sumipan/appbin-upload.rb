@@ -44,6 +44,7 @@ module Upload
       {
         "bundle_version" => "#{content['version']} (#{content['version']}) ##{content['revision']}",
         "install_url"    => content['install_url'],
+        "qr_code_url"    => content['qr_code_url'],
       }
     end
   end

@@ -40,7 +40,6 @@ module Upload
       }
 
       response = conn.post uri.path, params
-      response.headers['location']
 
       {
         "bundle_version" => "#{versionName} (#{versionName})",

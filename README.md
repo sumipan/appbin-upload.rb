@@ -7,7 +7,7 @@ Upload application binary.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'appbin-upload'
+gem 'appbin-upload', :git => 'https://github.com/sumipan/appbin-upload.rb.git', :branch => 'master'
 ```
 
 And then execute:

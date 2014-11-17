@@ -1,6 +1,6 @@
 # Appbin::Upload
 
-TODO: Write a gem description
+Upload application binary.
 
 ## Installation
 
@@ -14,17 +14,19 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install appbin-upload
-
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'appbin/upload'
+
+response = Appbin::Upload::Post.new({
+  :endpoint => 'http://yourhost.com'
+}).upload(apk_path)
+```
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/appbin-upload/fork )
+1. Fork it ( https://github.com/sumipan/appbin-upload.rb/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

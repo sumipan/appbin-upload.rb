@@ -16,8 +16,6 @@ module Upload
     def upload(path, notes)
       raise 'File not found.' unless File.exist?(path)
 
-      raise 'Only .apk file supported.' unless path.match(/\.apk$/)
-
       uri = URI.parse(@endpoint)
 
       conn = Faraday.new(:url => sprintf('%s://%s:%s', uri.scheme, uri.hostname, uri.port)) do |builder|

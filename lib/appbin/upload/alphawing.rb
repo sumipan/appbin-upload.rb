@@ -36,6 +36,8 @@ module Upload
         req.options.timeout      = 600
         req.options.open_timeout = 600
       end
+      
+      p response.body
 
       content = JSON.parse(response.body)['content']
 
